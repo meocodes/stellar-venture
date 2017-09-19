@@ -1,0 +1,27 @@
+<h1>Repair</h1>
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let ship of (this.shipyard.myShips | async)">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>{{ship.type}} Class {{ship.class}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Condition</div>
+      <div class="col-xs-9">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" [ngStyle]="{width : ( ship.condition + '%' ) }">
+            {{ship.condition}}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="ship.condition < 100">
+      <div class="col-xs-12">
+        <button [ngClass]="{disabled : isTooExpensive(ship)}" (click)="repair(ship)" class="btn btn-primary pull-right">
+            <i class="fa fa-wrench" aria-hidden="true"></i>&nbsp; Repair
+          </button>
+      </div>
+    </div>
+  </div>
+</div>

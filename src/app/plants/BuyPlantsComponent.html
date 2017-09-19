@@ -1,0 +1,22 @@
+<h1>Buy</h1>
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let plant of plants">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>{{plant.name}}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <span class="col-xs-6"><i class="fa fa-cogs fa-fw" aria-hidden="true"></i>&nbsp; {{plant.operating}} C/D</span>
+      <span class="col-xs-6"><i class="fa fa-archive fa-fw" aria-hidden="true"></i>&nbsp; {{plant.size}} FE</span>
+      <span class="col-xs-6"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i>&nbsp; {{plant.maintenance}} C/D</span>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button [ngClass]="{disabled : service.isTooExpensive(plant)}" (click)="service.buy(plant)" class="btn btn-primary btn-block">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; {{plant.price | number : fractionSize}} C
+          </button>
+      </div>
+    </div>
+  </div>
+</div>

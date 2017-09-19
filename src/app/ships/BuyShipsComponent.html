@@ -1,0 +1,24 @@
+<h1>Buy</h1>
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let ship of ships">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>{{ship.type}}</h3>
+        <h4><i class="fa" [ngClass]="ship | shipTypeIconClass" aria-hidden="true"></i>&nbsp; Class {{ship.class}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <span class="col-xs-7"><i class="fa fa-archive fa-fw" aria-hidden="true"></i>&nbsp; {{ship.capacity}} FE</span>
+      <span class="col-xs-5"><i class="fa fa-space-shuttle fa-fw" aria-hidden="true"></i>&nbsp; 9 C/D</span>
+      <span class="col-xs-7"><i class="fa fa-tachometer fa-fw" aria-hidden="true"></i>&nbsp; {{ship.speed}} P/D</span>
+      <span class="col-xs-5"><i class="fa fa-wrench fa-fw" aria-hidden="true"></i>&nbsp; 5 C/D</span>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button [ngClass]="{disabled : shipyard.isTooExpensive(ship)}" (click)="shipyard.buy(ship)" class="btn btn-primary btn-block">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; {{ship.price | number : fractionSize}} C
+          </button>
+      </div>
+    </div>
+  </div>
+</div>

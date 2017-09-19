@@ -1,0 +1,27 @@
+<notifications></notifications>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+    <div class="btn-group btn-group-lg" role="group">
+      <button [routerLink]="['/bank']" type="button" class="btn btn-block btn-lg">
+        <i class="fa fa-university fa-fw" aria-hidden="true"></i><br>
+        Bank
+      </button>
+    </div>
+    <div class="btn-group btn-group-lg" role="group">
+      <button [routerLink]="['/ships']" type="button" class="btn btn-block btn-lg">
+        <i class="fa fa-rocket fa-fw" aria-hidden="true"></i><br>
+        Ships
+      </button>
+    </div>
+    <div class="btn-group btn-group-lg" role="group">
+      <button [routerLink]="['/plants']" type="button" class="btn btn-block btn-lg">
+        <i class="fa fa-industry fa-fw" aria-hidden="true"></i><br>
+        Plants
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<br><br><br>

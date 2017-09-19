@@ -1,0 +1,13 @@
+<h1>My ships</h1>
+<table class="table">
+  <tr>
+    <th>#</th>
+    <th>Type</th>
+    <th>Class</th>
+  </tr>
+  <tr *ngFor="let ship of (shipyard.myShips | async); let i = index">
+    <td>{{i + 1}}</td>
+    <td><i class="fa fa-fw" [ngClass]="ship | shipTypeIconClass" aria-hidden="true"></i>&nbsp;{{ship.type}}</td>
+    <td>{{ship.class}}</td>
+  </tr>
+</table>

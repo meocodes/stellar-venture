@@ -1,0 +1,28 @@
+<h1>Sell</h1>
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let ship of (this.shipyard.myShips | async); let i = index">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>{{ship.type}} Class {{ship.class}}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">Condition</div>
+      <div class="col-xs-9">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" [ngStyle]="{width : ( ship.condition + '%' ) }">
+            {{ship.condition}}%
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <button (click)="shipyard.sell(i)" class="btn btn-primary pull-right">
+            <i class="fa fa-dollar" aria-hidden="true"></i>&nbsp; Sell for {{this.shipyard.sellPrice(ship)}} C
+          </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="(this.shipyard.myShips | async)?.length < 1">You do not possess any ships to sell.</div>

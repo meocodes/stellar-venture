@@ -1,0 +1,41 @@
+<h1>Ships</h1>
+<div class="media" *ngIf="(shipyard.myShips | async)?.length > 0">
+  <a [routerLink]="['/ships/my']">
+    <div class="media-left">
+      <i class="fa fa-space-shuttle fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">My ships</h4>
+    </div>
+  </a>
+</div>
+<div class="media">
+  <a [routerLink]="['/ships/buy']">
+    <div class="media-left">
+      <i class="fa fa-shopping-cart fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Buy</h4> Purchase new ships.
+    </div>
+  </a>
+</div>
+<div class="media" *ngIf="(shipyard.myShips | async)?.length > 0">
+  <a [routerLink]="['/ships/sell']">
+    <div class="media-left">
+      <i class="fa fa-usd fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Sell</h4> Sell ships in your possession.
+    </div>
+  </a>
+</div>
+<div class="media" *ngIf="(shipyard.myShips | async)?.length > 0">
+  <a [routerLink]="['/ships/repair']">
+    <div class="media-left">
+      <i class="fa fa-wrench fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Repair</h4> Repair your ships.
+    </div>
+  </a>
+</div>

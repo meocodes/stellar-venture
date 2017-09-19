@@ -1,0 +1,53 @@
+<h1>Bank</h1>
+<div class="list-group">
+  <div class="list-group-item">
+    <div class="row">
+      <div class="col-xs-4">
+        <h4>Funds</h4>
+      </div>
+      <div class="col-xs-8">
+        <h4>{{this.bank.funds | number : '1.0-0'}} C</h4>
+      </div>
+    </div>
+  </div>
+  <div class="list-group-item">
+    <div class="row">
+      <div class="col-xs-4">
+        <h4>Debt</h4>
+      </div>
+      <div class="col-xs-8">
+        <h4>{{this.bank.debt | number : '1.0-0'}} C</h4>
+      </div>
+    </div>
+  </div>
+  <div class="list-group-item">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Raise a credit</h4>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="input-group">
+        <input [ngModel]="creditAmount" (ngModelChange)="creditAmount = $event" type="number" min="50000" max="5000000" step="50000" class="form-control" aria-label="Credit amount">
+        <span class="input-group-btn">
+            <button (click)="this.bank.borrow(creditAmount)" class="btn btn-primary" type="button">Borrow {{creditAmount | number : '1.0-0'}} C</button>
+          </span>
+      </div>
+    </div>
+  </div>
+  <div class="list-group-item">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Repay a credit</h4>
+      </div>
+    </div>
+    <div class="row container">
+      <div class="input-group">
+        <input [ngModel]="repayAmount" (ngModelChange)="repayAmount = $event" type="number" min="50000" max="{{this.bank.debt}}" class="form-control" aria-label="Credit amount">
+        <span class="input-group-btn">
+            <button (click)="this.bank.repay(repayAmount)" class="btn btn-primary" type="button">Pay back {{repayAmount | number : '1.0-0'}} C</button>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>

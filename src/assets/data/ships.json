@@ -1,0 +1,153 @@
+[{
+    "id": 1001,
+    "type": "Tanker",
+    "class": "A",
+    "name": "Tanker [A]",
+    "price": 210000,
+    "capacity": 16000,
+    "speed": 65,
+    "condition": 100,
+    "operating": 30,
+    "maintenance": 5
+  },
+  {
+    "id": 1002,
+    "type": "Tanker",
+    "class": "B",
+    "name": "Tanker [B]",
+    "price": 280000,
+    "capacity": 28000,
+    "speed": 52,
+    "condition": 100
+  },
+  {
+    "id": 1003,
+    "type": "Tanker",
+    "class": "C",
+    "name": "Tanker [C]",
+    "price": 340000,
+    "capacity": 45000,
+    "speed": 40,
+    "condition": 100
+  },
+  {
+    "id": 1004,
+    "type": "Tanker",
+    "class": "D",
+    "name": "Tanker [D]",
+    "price": 500000,
+    "capacity": 65000,
+    "speed": 35,
+    "condition": 100
+  },
+  {
+    "id": 1005,
+    "type": "Tanker",
+    "class": "E",
+    "name": "Tanker [E]",
+    "price": 640000,
+    "capacity": 100000,
+    "speed": 30,
+    "condition": 100
+  },
+  {
+    "id": 1006,
+    "type": "Bulk cargo freighter",
+    "class": "A",
+    "name": "Bulk Cargo Freighter [A]",
+    "price": 220000,
+    "capacity": 14000,
+    "speed": 70,
+    "condition": 100
+  },
+  {
+    "id": 1007,
+    "type": "Bulk cargo freighter",
+    "class": "B",
+    "name": "Bulk Cargo Freighter [B]",
+    "price": 270000,
+    "capacity": 25000,
+    "speed": 57,
+    "condition": 100
+  },
+  {
+    "id": 1008,
+    "type": "Bulk cargo freighter",
+    "class": "C",
+    "name": "Bulk Cargo Freighter [C]",
+    "price": 310000,
+    "capacity": 38000,
+    "speed": 45,
+    "condition": 100
+  },
+  {
+    "id": 1009,
+    "type": "Bulk cargo freighter",
+    "class": "D",
+    "name": "Bulk Cargo Freighter [D]",
+    "price": 440000,
+    "capacity": 55000,
+    "speed": 40,
+    "condition": 100
+  },
+  {
+    "id": 1010,
+    "type": "Bulk cargo freighter",
+    "class": "E",
+    "name": "Bulk Cargo Freighter [E]",
+    "price": 600000,
+    "capacity": 80000,
+    "speed": 38,
+    "condition": 100
+  },
+  {
+    "id": 1011,
+    "type": "General cargo freighter",
+    "class": "A",
+    "name": "General Cargo Freighter [A]",
+    "price": 230000,
+    "capacity": 15000,
+    "speed": 80,
+    "condition": 100
+  },
+  {
+    "id": 1012,
+    "type": "General cargo freighter",
+    "class": "B",
+    "name": "General Cargo Freighter [B]",
+    "price": 290000,
+    "capacity": 26000,
+    "speed": 67,
+    "condition": 100
+  },
+  {
+    "id": 1013,
+    "type": "General cargo freighter",
+    "class": "C",
+    "name": "General Cargo Freighter [C]",
+    "price": 350000,
+    "capacity": 38000,
+    "speed": 57,
+    "condition": 100
+  },
+  {
+    "id": 1014,
+    "type": "General cargo freighter",
+    "class": "D",
+    "name": "General Cargo Freighter [D]",
+    "price": 450000,
+    "capacity": 55000,
+    "speed": 48,
+    "condition": 100
+  },
+  {
+    "id": 1015,
+    "type": "General cargo freighter",
+    "class": "E",
+    "name": "General Cargo Freighter [E]",
+    "price": 650000,
+    "capacity": 80000,
+    "speed": 45,
+    "condition": 100
+  }
+]

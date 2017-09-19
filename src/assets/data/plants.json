@@ -1,0 +1,28 @@
+[{
+  "name": "Oil production facility",
+  "output": [{
+    "oil": 350
+  }],
+  "price": 250000,
+  "size": 8000,
+  "operating": 100,
+  "maintenance": 30
+}, {
+  "name": "Ore mine",
+  "output": [{
+    "ore": 350
+  }],
+  "price": 300000,
+  "size": 15000,
+  "operating": 100,
+  "maintenance": 30
+}, {
+  "name": "Water station",
+  "output": [{
+    "water": 250
+  }],
+  "price": 300000,
+  "size": 10000,
+  "operating": 120,
+  "maintenance": 30
+}]

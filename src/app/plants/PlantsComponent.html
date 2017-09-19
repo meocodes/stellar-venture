@@ -1,0 +1,21 @@
+<h1>Plants</h1>
+<div class="media" *ngIf="(service.myPlants | async)?.length > 0">
+  <a [routerLink]="['/plants/my']">
+    <div class="media-left">
+      <i class="fa fa-industry fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">My plants</h4>
+    </div>
+  </a>
+</div>
+<div class="media">
+  <a [routerLink]="['/plants/buy']">
+    <div class="media-left">
+      <i class="fa fa-shopping-cart fa-fw fa-2x"></i>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Buy</h4> Purchase new plants.
+    </div>
+  </a>
+</div>
